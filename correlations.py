@@ -7,13 +7,13 @@ import seaborn as sns
 sns.set_theme(style="whitegrid")
 
 
-co2 = pd.read_csv(r'C:/Users/Shamil Malinda/Desktop/Assignment/Projects/Final Report/Final Report Python/Final Report Code/CO2 Emissions.csv')
+co2 = pd.read_csv(r'file_path')
 co2 = co2.rename(columns={'Country':'Year'})
 co2 = co2.replace({'Australia':'Aus_CO2','Austria':'Aut_CO2','Belgium':'Bel_CO2','Canada':'Can_CO2','China':'Chn_CO2','Denmark':'Den_CO2','Finland':'Fin_CO2','France':'Fra_CO2','Germany':'Ger_CO2','Italy':'Ita_CO2','Japan':'Jpn_CO2','Netherlands':'Nld_CO2','Norway':'Nor_CO2','Portugal':'Ptg_CO2','South Korea':'Kor_CO2','Spain':'Esp_CO2','Sweden':'Swe_CO2','Switzerland':'Swi_CO2','United Kingdom':'UK_CO2','USA':'USA_CO2'},regex=True)
 co2 = co2.set_index('Year').T
 print(co2)
 
-evs = pd.read_csv(r'C:/Users/Shamil Malinda/Desktop/Assignment/Projects/Final Report/Final Report Python/Final Report Code/ev_sales_per_capita.csv')
+evs = pd.read_csv(r'file_path')
 evs = evs.rename(columns={'Country':'Year'})
 evs = evs.replace({'Australia':'Aus_evs','Austria':'Aut_evs','Belgium':'Bel_evs','Canada':'Can_evs','China':'Chn_evs','Denmark':'Den_evs','Finland':'Fin_evs','France':'Fra_evs','Germany':'Ger_evs','Italy':'Ita_evs','Japan':'Jpn_evs','Netherlands':'Nld_evs','Norway':'Nor_evs','Portugal':'Ptg_evs','South Korea':'Kor_evs','Spain':'Esp_evs','Sweden':'Swe_evs','Switzerland':'Swi_evs','United Kingdom':'UK_evs','USA':'USA_evs'},regex=True)
 evs = evs.set_index('Year').T
