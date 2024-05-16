@@ -2,17 +2,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-co2 = pd.read_csv(r'C:/Users/Shamil Malinda/Desktop/Assignment/Projects/Final Report/Final Report Python/Final Report Code/CO2 Emissions.csv')
+co2 = pd.read_csv(r'file_path')
 print(co2)
 
-evs = pd.read_csv(r'C:/Users/Shamil Malinda/Desktop/Assignment/Projects/Final Report/Final Report Python/Final Report Code/EV Sales.csv')
+evs = pd.read_csv(r'file_path')
 evs = evs.iloc[:,1:]
 print(evs)
 
-co2_ss = pd.read_csv(r'C:/Users/Shamil Malinda/Desktop/Assignment/Projects/Final Report/Final Report Python/Final Report Code/co2_emission_summary_statistics.csv')
+co2_ss = pd.read_csv(r'file_path')
 print(co2_ss)
 
-ev_ss = pd.read_csv(r'C:/Users/Shamil Malinda/Desktop/Assignment/Projects/Final Report/Final Report Python/Final Report Code/ev_sales_summary_statistics.csv')
+ev_ss = pd.read_csv(r'file_path')
 print(ev_ss)
 
 
