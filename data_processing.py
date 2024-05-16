@@ -2,15 +2,15 @@ import pandas as pd
 import numpy as np
 
 #import CO2 emmision per capita data of the countries
-co2 = pd.read_csv(r'C:/Users/Shamil Malinda/Desktop/Assignment/Projects/Final Report/Final Report Python/Final Report Code/CO2 Emissions.csv')
+co2 = pd.read_csv(r'file_path')
 print(co2)
 
 #import ev sales data of the countries
-evs = pd.read_csv(r'C:/Users/Shamil Malinda/Desktop/Assignment/Projects/Final Report/Final Report Python/Final Report Code/EV Sales.csv')
+evs = pd.read_csv(r'file_path')
 print(evs)
 
 #import poulation data of the countries
-pop = pd.read_csv(r'C:/Users/Shamil Malinda/Desktop/Assignment/Projects/Final Report/Final Report Python/Final Report Code/Population by countries.csv')
+pop = pd.read_csv(r'file_path')
 print(pop)
 
 #rename the header Row Labels into Country
@@ -88,11 +88,11 @@ print(countries)
 
 co2_emission_summary_stat = pd.concat([countries,co2_ss],axis=1)
 print(co2_emission_summary_stat)
-co2_emission_summary_stat.to_csv('C:/Users/Shamil Malinda/Desktop/Assignment/Projects/Final Report/Final Report Python/Final Report Code/co2_emission_summary_statistics.csv',index=False)
+co2_emission_summary_stat.to_csv('file_path',index=False)
 
 ev_sales_summary_stats = pd.concat([countries,evs_ss],axis=1)
 print(ev_sales_summary_stats)
-ev_sales_summary_stats.to_csv('C:/Users/Shamil Malinda/Desktop/Assignment/Projects/Final Report/Final Report Python/Final Report Code/ev_sales_summary_statistics.csv',index=False)
+ev_sales_summary_stats.to_csv('file_path',index=False)
 
 ev_sales_per_capita = pd.concat([countries,evs_pc],axis=1)
-ev_sales_per_capita.to_csv('C:/Users/Shamil Malinda/Desktop/Assignment/Projects/Final Report/Final Report Python/Final Report Code/ev_sales_per_capita.csv',index=False)
+ev_sales_per_capita.to_csv('file_path',index=False)
